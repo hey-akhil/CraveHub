@@ -1,0 +1,312 @@
+/* CraveHub Admin Control Panel Styles */
+:root {
+    color-scheme: dark;
+    --admin-sidebar-w: 260px;
+    --admin-bg: #0b0f19;
+    --admin-surface: #111827;
+    --admin-card: rgba(23, 32, 51, 0.8);
+    --admin-border: rgba(255, 255, 255, 0.08);
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--admin-bg);
+}
+
+/* Sidebar */
+.admin-sidebar {
+    width: var(--admin-sidebar-w);
+    background: var(--admin-surface);
+    border-right: 1px solid var(--admin-border);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.admin-sidebar-brand {
+    padding: 1.5rem 1.25rem;
+    border-bottom: 1px solid var(--admin-border);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.admin-nav-list {
+    list-style: none;
+    padding: 1.25rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.admin-nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.admin-nav-item a:hover,
+.admin-nav-item.active a {
+    background: rgba(249, 115, 22, 0.12);
+    color: var(--primary);
+}
+
+.admin-nav-item a i {
+    width: 22px;
+    font-size: 1.1rem;
+}
+
+.admin-sidebar-footer {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--admin-border);
+    font-size: 0.85rem;
+}
+
+/* Main Content Area */
+.admin-main {
+    margin-left: var(--admin-sidebar-w);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.admin-topbar {
+    height: 70px;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--admin-border);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-body {
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Stat Cards */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--admin-card);
+    border: 1px solid var(--admin-border);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-highlight);
+    box-shadow: var(--shadow-glow);
+}
+
+.stat-info h6 {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+.stat-info .stat-value {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: var(--font-heading);
+    color: var(--text-main);
+}
+
+.stat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stat-icon.primary {
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--primary);
+}
+
+.stat-icon.green {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.stat-icon.blue {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.stat-icon.purple {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+}
+
+/* Admin Data Table */
+.admin-card-table {
+    background: var(--admin-card);
+    border: 1px solid var(--admin-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.table-header-bar {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--admin-border);
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.custom-table th {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--admin-border);
+}
+
+.custom-table td {
+    padding: 1.1rem 1.25rem;
+    border-bottom: 1px solid var(--admin-border);
+    font-size: 0.9rem;
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+.custom-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Status updater select */
+.status-select {
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius-full);
+    background-color: #111827;
+    border: 1px solid var(--border-subtle);
+    color: #f8fafc;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color-scheme: dark;
+}
+
+.status-select option {
+    background-color: #111827;
+    color: #f8fafc;
+    padding: 8px 12px;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+/* Modals */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    padding: 1.5rem;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-container {
+    background: var(--admin-surface);
+    border: 1px solid var(--admin-border);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 620px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--shadow-md);
+    transform: translateY(20px);
+    transition: transform 0.25s ease;
+}
+
+.modal-overlay.active .modal-container {
+    transform: translateY(0);
+}
+
+.modal-header {
+    padding: 1.25rem 1.75rem;
+    border-bottom: 1px solid var(--admin-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-body {
+    padding: 1.75rem;
+}
+
+.modal-footer {
+    padding: 1.25rem 1.75rem;
+    border-top: 1px solid var(--admin-border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}

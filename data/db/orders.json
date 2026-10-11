@@ -1,0 +1,519 @@
+[
+    {
+        "_id": "ORD-1A018288",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "delivery_notes": "Please ring the doorbell and leave at door",
+        "items": [
+            {
+                "food_id": "seed_1",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 1,
+                "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=700&auto=format&fit=crop&q=80"
+            },
+            {
+                "food_id": "seed_2",
+                "title": "Virgin Mint Lime Mojito",
+                "price": 119,
+                "qty": 2,
+                "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=700&auto=format&fit=crop&q=80"
+            }
+        ],
+        "subtotal": 587,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 23.35,
+        "total_amount": 490.35,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN1791211213UPI",
+        "status": "out_for_delivery",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 14:15:13",
+                "note": "Order placed successfully"
+            },
+            {
+                "status": "confirmed",
+                "time": "2026-10-05 14:20:13",
+                "note": "Kitchen confirmed order"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 14:28:13",
+                "note": "Chef is preparing your delicious meal"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 14:36:13",
+                "note": "Partner Rajesh Kumar is on the way"
+            }
+        ],
+        "created_at": "2026-10-05 14:15:13",
+        "updated_at": "2026-10-05 14:40:13"
+    },
+    {
+        "_id": "ORD-TEST2691",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "items": [
+            {
+                "food_id": "6ac3b6cd937a2715ac0b89b2",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 2,
+                "notes": "Less spicy please"
+            }
+        ],
+        "subtotal": 698,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 28.9,
+        "total_amount": 606.9,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN_TEST_1791211900",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 14:51:40",
+                "note": "Order placed successfully"
+            }
+        ],
+        "created_at": "2026-10-05 14:51:40",
+        "updated_at": "2026-10-05 14:51:41"
+    },
+    {
+        "_id": "ORD-3E0D9164",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "delivery_notes": "Please ring the doorbell and leave at door",
+        "items": [
+            {
+                "food_id": "seed_1",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 1,
+                "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=700&auto=format&fit=crop&q=80"
+            },
+            {
+                "food_id": "seed_2",
+                "title": "Virgin Mint Lime Mojito",
+                "price": 119,
+                "qty": 2,
+                "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=700&auto=format&fit=crop&q=80"
+            }
+        ],
+        "subtotal": 587,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 23.35,
+        "total_amount": 490.35,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN1791212599UPI",
+        "status": "out_for_delivery",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 14:38:19",
+                "note": "Order placed successfully"
+            },
+            {
+                "status": "confirmed",
+                "time": "2026-10-05 14:43:19",
+                "note": "Kitchen confirmed order"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 14:51:19",
+                "note": "Chef is preparing your delicious meal"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 14:59:19",
+                "note": "Partner Rajesh Kumar is on the way"
+            }
+        ],
+        "created_at": "2026-10-05 14:38:19",
+        "updated_at": "2026-10-05 15:03:19"
+    },
+    {
+        "_id": "ORD-TEST4826",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f1250637f2",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 2,
+                "notes": "Less spicy please"
+            }
+        ],
+        "subtotal": 698,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 28.9,
+        "total_amount": 606.9,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN_TEST_1791212608",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 15:03:28",
+                "note": "Order placed successfully"
+            }
+        ],
+        "created_at": "2026-10-05 15:03:28",
+        "updated_at": "2026-10-05 15:03:29"
+    },
+    {
+        "_id": "ORD-D4E1D378",
+        "user_id": "6ac3bcbf22951076660ba182",
+        "customer_name": "Priya Patel",
+        "customer_email": "abc@gmail.com",
+        "customer_phone": "7778889990",
+        "delivery_address": "Silver Mall, RNT Marg\r\nApt",
+        "delivery_notes": "",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f1250637f2",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "image": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?w=700&auto=format&fit=crop&q=80",
+                "is_veg": true,
+                "qty": 1,
+                "notes": ""
+            }
+        ],
+        "subtotal": 349,
+        "discount": 0,
+        "coupon_code": null,
+        "delivery_fee": 40,
+        "tax": 17.45,
+        "total_amount": 406.45,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN1791212763A18879",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 15:06:03",
+                "note": "Order placed successfully via UPI"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 15:08:41",
+                "note": "Admin updated status to PREPARING"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 15:08:56",
+                "note": "Admin updated status to OUT_FOR_DELIVERY"
+            },
+            {
+                "status": "delivered",
+                "time": "2026-10-05 15:09:09",
+                "note": "Admin updated status to DELIVERED"
+            },
+            {
+                "status": "confirmed",
+                "time": "2026-10-05 15:09:30",
+                "note": "Admin updated status to CONFIRMED"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 15:09:46",
+                "note": "Chef is preparing your fresh meal with hygienic safety"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 15:09:47",
+                "note": "Valet picked up your meal and is on the way!"
+            },
+            {
+                "status": "delivered",
+                "time": "2026-10-05 15:09:49",
+                "note": "Order successfully handed over to customer. Enjoy!"
+            }
+        ],
+        "created_at": "2026-10-05 15:06:03",
+        "updated_at": "2026-10-05 15:09:49"
+    },
+    {
+        "_id": "ORD-F4B47AF0",
+        "user_id": "6ac3bcbf22951076660ba182",
+        "customer_name": "Priya Patel",
+        "customer_email": "abc@gmail.com",
+        "customer_phone": "7778889990",
+        "delivery_address": "Silver Mall, RNT Marg\r\nApt",
+        "delivery_notes": "",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f1250637f6",
+                "title": "Crispy Zesty Paneer Burger",
+                "price": 219,
+                "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&auto=format&fit=crop&q=80",
+                "is_veg": true,
+                "qty": 1,
+                "notes": ""
+            }
+        ],
+        "subtotal": 219,
+        "discount": 0,
+        "coupon_code": null,
+        "delivery_fee": 40,
+        "tax": 10.95,
+        "total_amount": 269.95,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN17912138424625E2",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 15:24:02",
+                "note": "Order placed successfully via UPI"
+            },
+            {
+                "status": "confirmed",
+                "time": "2026-10-05 15:24:43",
+                "note": "Admin updated status to CONFIRMED"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 15:24:50",
+                "note": "Admin updated status to PREPARING"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 15:24:55",
+                "note": "Admin updated status to OUT_FOR_DELIVERY"
+            },
+            {
+                "status": "delivered",
+                "time": "2026-10-05 15:25:02",
+                "note": "Admin updated status to DELIVERED"
+            }
+        ],
+        "created_at": "2026-10-05 15:24:02",
+        "updated_at": "2026-10-05 15:25:02"
+    },
+    {
+        "_id": "ORD-3AA01693",
+        "user_id": "6ac3c35d22951076660ba183",
+        "customer_name": "Jay Patel",
+        "customer_email": "jay@gmail.com",
+        "customer_phone": "7778889991",
+        "delivery_address": "Silver Mall, RNT Marg\r\nApt",
+        "delivery_notes": "",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f125063802",
+                "title": "Molten Belgian Choco Lava Cake",
+                "price": 149,
+                "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700&auto=format&fit=crop&q=80",
+                "is_veg": true,
+                "qty": 1,
+                "notes": ""
+            }
+        ],
+        "subtotal": 149,
+        "discount": 0,
+        "coupon_code": null,
+        "delivery_fee": 40,
+        "tax": 7.45,
+        "total_amount": 196.45,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN179121447625D3F4",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-05 15:34:36",
+                "note": "Order placed successfully via UPI"
+            },
+            {
+                "status": "confirmed",
+                "time": "2026-10-05 15:35:07",
+                "note": "Admin updated status to CONFIRMED"
+            },
+            {
+                "status": "preparing",
+                "time": "2026-10-05 15:35:15",
+                "note": "Admin updated status to PREPARING"
+            },
+            {
+                "status": "out_for_delivery",
+                "time": "2026-10-05 15:35:20",
+                "note": "Admin updated status to OUT_FOR_DELIVERY"
+            },
+            {
+                "status": "delivered",
+                "time": "2026-10-05 15:35:26",
+                "note": "Admin updated status to DELIVERED"
+            }
+        ],
+        "created_at": "2026-10-05 15:34:36",
+        "updated_at": "2026-10-05 15:35:26"
+    },
+    {
+        "_id": "ORD-TEST8458",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f1250637f2",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 2,
+                "notes": "Less spicy please"
+            }
+        ],
+        "subtotal": 698,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 28.9,
+        "total_amount": 606.9,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN_TEST_1791742204",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-11 18:10:04",
+                "note": "Order placed successfully"
+            }
+        ],
+        "created_at": "2026-10-11 18:10:04",
+        "updated_at": "2026-10-11 18:10:06"
+    },
+    {
+        "_id": "ORD-TEST4377",
+        "user_id": "user_001",
+        "customer_name": "Rahul Sharma",
+        "customer_email": "rahul@gmail.com",
+        "customer_phone": "9876543210",
+        "delivery_address": "Flat 402, Sunshine Heights, 100ft Road, Indiranagar, Bengaluru, 560038",
+        "items": [
+            {
+                "food_id": "6ac3bc37f9a2a5f1250637f2",
+                "title": "Truffle Margherita Pizza",
+                "price": 349,
+                "qty": 2,
+                "notes": "Less spicy please"
+            }
+        ],
+        "subtotal": 698,
+        "discount": 120,
+        "coupon_code": "TASTY50",
+        "delivery_fee": 0,
+        "tax": 28.9,
+        "total_amount": 606.9,
+        "payment_method": "upi",
+        "payment_status": "paid",
+        "transaction_id": "TXN_TEST_1791742753",
+        "status": "delivered",
+        "delivery_partner": {
+            "name": "Rajesh Kumar",
+            "phone": "+91 98231 44556",
+            "vehicle": "Honda Activa (KA-03-EX-4491)",
+            "rating": 4.9,
+            "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80"
+        },
+        "status_history": [
+            {
+                "status": "placed",
+                "time": "2026-10-11 18:19:13",
+                "note": "Order placed successfully"
+            }
+        ],
+        "created_at": "2026-10-11 18:19:13",
+        "updated_at": "2026-10-11 18:19:14"
+    }
+]
