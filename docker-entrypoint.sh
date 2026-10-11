@@ -13,5 +13,8 @@ mkdir -p /var/www/html/data/db
 chown -R www-data:www-data /var/www/html/data
 chmod -R 775 /var/www/html/data
 
+# Auto-seed database if empty
+php /var/www/html/seed.php || true
+
 # Run Apache in foreground
 exec apache2-foreground

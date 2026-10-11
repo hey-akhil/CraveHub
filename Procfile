@@ -1,1 +1,1 @@
-web: php -S 0.0.0.0:$PORT -t .
+web: php seed.php; php -S 0.0.0.0:$PORT -t .

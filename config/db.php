@@ -15,11 +15,11 @@ class Database {
     private $storageDir;
 
     private function __construct() {
-        $envUri = getenv('MONGODB_URI');
+        $envUri = getenv('MONGODB_URI') ?: (getenv('MONGO_URL') ?: getenv('DATABASE_URL'));
         if (!empty($envUri)) {
             $this->connectionUri = $envUri;
         }
-        $envDb = getenv('MONGODB_DB');
+        $envDb = getenv('MONGODB_DB') ?: (getenv('MONGO_INITDB_DATABASE') ?: getenv('MONGO_DATABASE'));
         if (!empty($envDb)) {
             $this->dbName = $envDb;
         }
