@@ -99,6 +99,21 @@ php -S 127.0.0.1:8000
 
 ---
 
+## ☁️ Deploying on Render (Free)
+
+This repository includes a production-ready `Dockerfile` and `render.yaml` configured for Render:
+
+1. Go to [Render.com](https://render.com) and click **New +** ➔ **Web Service**.
+2. Connect your GitHub repository: `https://github.com/hey-akhil/CraveHub`.
+3. Render will automatically detect the **Docker** environment.
+4. (Optional for live MongoDB Atlas cloud database):
+   - In **Environment Variables**, add:
+     - `MONGODB_URI`: `mongodb+srv://<username>:<password>@cluster.mongodb.net/?retryWrites=true&w=majority`
+     - `MONGODB_DB`: `food_delivery_db`
+5. Click **Deploy Web Service** — Render will build and launch your site with a live HTTPS URL!
+
+---
+
 ## 🔑 Demo Login Credentials
 
 ### Customer Login

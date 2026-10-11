@@ -15,6 +15,15 @@ class Database {
     private $storageDir;
 
     private function __construct() {
+        $envUri = getenv('MONGODB_URI');
+        if (!empty($envUri)) {
+            $this->connectionUri = $envUri;
+        }
+        $envDb = getenv('MONGODB_DB');
+        if (!empty($envDb)) {
+            $this->dbName = $envDb;
+        }
+
         $this->storageDir = dirname(__DIR__) . '/data/db';
         if (!file_exists($this->storageDir)) {
             mkdir($this->storageDir, 0777, true);
